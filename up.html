@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">Top</a>
+    <!-- Styles your button (this is a black square with white text) -->
+<style>
+    .back-to-top {
+      background-color: #000000;
+      color: #FFFFFF;
+      opacity: 0;
+      transition: opacity .6s ease-in-out;
+      z-index: 999;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      box-sizing: border-box;
+      border-radius: 0%;
+    }
+  
+    a.back-to-top {
+      font-weight: 1000;
+      letter-spacing: 2px;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.6;
+      padding-left: 2px;
+      padding-top: 14px;
+    }
+  
+    .back-to-top:hover, .back-to-top:focus, .back-to-top:visited {
+      color: #FFFFFF;
+    }
+  
+    .back-to-top.show {
+      opacity: 1;
+    }
+  </style>
+  
+  
+  <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">Top</a>
+  
+  
+  <script>
+    var link = document.getElementById("back-to-top");
+    var amountScrolled = 250;
+  
+    window.addEventListener('scroll', function(e) {
+        if ( window.pageYOffset > amountScrolled ) {
+            link.classList.add('show');
+        } else {
+            link.className = 'back-to-top';
+        }
+    });
+  
+
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+  
+        var distance = 0 - window.pageYOffset;
+        var increments = distance/(500/16);
+        function animateScroll() {
+            window.scrollBy(0, increments);
+            if (window.pageYOffset <= document.body.offsetTop) {
+                clearInterval(runAnimation);
+            }
+        };
+        // Loop the animation function
+        var runAnimation = setInterval(animateScroll, 16);
+    });
+  </script>
+  
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum sodales eros, vel sodales lacus vulputate a. Praesent quam ante, ultricies id nisl et, hendrerit finibus ipsum. Vestibulum mattis aliquet mauris, lobortis dapibus nisl tincidunt vel. Mauris quis velit vel ipsum euismod accumsan. Nunc congue iaculis ultrices. Sed dictum ut risus ac iaculis. Donec mollis porta sem. Quisque pellentesque dolor ipsum, non scelerisque felis consectetur eget. Proin non dapibus eros. Curabitur quis luctus elit. Morbi id venenatis massa. Etiam ultrices libero nisl, in vulputate elit consequat et.
+
+    Aliquam tortor arcu, luctus at lectus nec, mattis sollicitudin enim. Phasellus blandit viverra vestibulum. Vivamus semper convallis consectetur. Phasellus pulvinar elementum tellus eu dignissim. Quisque commodo lorem ut mi auctor, sed dapibus diam accumsan. Maecenas at fringilla metus, at posuere mauris. In hac habitasse platea dictumst. Nam tincidunt maximus purus ut pulvinar. Aliquam dapibus ornare venenatis. Fusce placerat feugiat mauris, sit amet aliquet mi. Curabitur urna ligula, venenatis ut congue eget, hendrerit vel nibh. Praesent malesuada feugiat egestas. Vivamus eu fringilla tellus. Nulla aliquam ac nulla ut posuere. Nunc in lectus mattis, aliquet neque in, gravida mi. Pellentesque at eros sed diam interdum porttitor.
+    
+    Sed dui ipsum, sagittis ac pulvinar a, luctus et massa. Nunc eu faucibus orci. Praesent ac nulla ex. Praesent ac felis velit. Ut vitae neque et ante auctor tempor. Sed placerat dui quis tempus pretium. Mauris dui odio, vehicula congue eros non, dapibus eleifend elit.
+    
+    Sed sodales odio non libero vulputate, at ullamcorper dolor laoreet. Etiam sed efficitur lacus. Morbi ac interdum ante. Nunc vel vestibulum sapien. Nam eget euismod diam. Sed pretium tempor arcu, sit amet fermentum lacus efficitur a. Nullam sit amet tempor eros, at malesuada neque.
+    
+    In tincidunt lorem vel lectus bibendum, sed ornare urna ultricies. Aliquam erat volutpat. Etiam vestibulum facilisis augue sed scelerisque. Vivamus eget pharetra neque, sit amet faucibus felis. Suspendisse potenti. Integer aliquam est quis nisi volutpat sodales. Sed auctor nec orci vel pulvinar. Ut at ante elit. Quisque et arcu enim. Ut volutpat elit enim, sed fringilla velit faucibus non. Donec rutrum ipsum vel metus tincidunt, sit amet eleifend arcu pellentesque. Donec pretium porttitor nisl a laoreet.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum sodales eros, vel sodales lacus vulputate a. Praesent quam ante, ultricies id nisl et, hendrerit finibus ipsum. Vestibulum mattis aliquet mauris, lobortis dapibus nisl tincidunt vel. Mauris quis velit vel ipsum euismod accumsan. Nunc congue iaculis ultrices. Sed dictum ut risus ac iaculis. Donec mollis porta sem. Quisque pellentesque dolor ipsum, non scelerisque felis consectetur eget. Proin non dapibus eros. Curabitur quis luctus elit. Morbi id venenatis massa. Etiam ultrices libero nisl, in vulputate elit consequat et.
+
+    Aliquam tortor arcu, luctus at lectus nec, mattis sollicitudin enim. Phasellus blandit viverra vestibulum. Vivamus semper convallis consectetur. Phasellus pulvinar elementum tellus eu dignissim. Quisque commodo lorem ut mi auctor, sed dapibus diam accumsan. Maecenas at fringilla metus, at posuere mauris. In hac habitasse platea dictumst. Nam tincidunt maximus purus ut pulvinar. Aliquam dapibus ornare venenatis. Fusce placerat feugiat mauris, sit amet aliquet mi. Curabitur urna ligula, venenatis ut congue eget, hendrerit vel nibh. Praesent malesuada feugiat egestas. Vivamus eu fringilla tellus. Nulla aliquam ac nulla ut posuere. Nunc in lectus mattis, aliquet neque in, gravida mi. Pellentesque at eros sed diam interdum porttitor.
+    
+    Sed dui ipsum, sagittis ac pulvinar a, luctus et massa. Nunc eu faucibus orci. Praesent ac nulla ex. Praesent ac felis velit. Ut vitae neque et ante auctor tempor. Sed placerat dui quis tempus pretium. Mauris dui odio, vehicula congue eros non, dapibus eleifend elit.
+    
+    Sed sodales odio non libero vulputate, at ullamcorper dolor laoreet. Etiam sed efficitur lacus. Morbi ac interdum ante. Nunc vel vestibulum sapien. Nam eget euismod diam. Sed pretium tempor arcu, sit amet fermentum lacus efficitur a. Nullam sit amet tempor eros, at malesuada neque.
+    
+    In tincidunt lorem vel lectus bibendum, sed ornare urna ultricies. Aliquam erat volutpat. Etiam vestibulum facilisis augue sed scelerisque. Vivamus eget pharetra neque, sit amet faucibus felis. Suspendisse potenti. Integer aliquam est quis nisi volutpat sodales. Sed auctor nec orci vel pulvinar. Ut at ante elit. Quisque et arcu enim. Ut volutpat elit enim, sed fringilla velit faucibus non. Donec rutrum ipsum vel metus tincidunt, sit amet eleifend arcu pellentesque. Donec pretium porttitor nisl a laoreet.</h1>
+</body>
+</html>
